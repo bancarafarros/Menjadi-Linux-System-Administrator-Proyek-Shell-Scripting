@@ -336,3 +336,13 @@
   336  clear
   337  history 
   338  history > history-didlewiz.txt
+  339  zip submission1-linux-didlewiz.zip script-didlewiz.sh history-didlewiz.txt 
+  340  git add .
+  341  git commit -m "retry 1"
+  342  git push -u github master 
+  343  git pull
+  344  ls
+  345  rm submission1-linux-didlewiz.zip 
+  346  rm history-didlewiz.txt 
+  347  history 
+  348  history > history-didlewiz.txt
