@@ -1,0 +1,317 @@
+    1  poweroff
+    2  sudo apt update
+    3  sudo apt install net-tools
+    4  ifconfig
+    5  sudo apt install openssh-server
+    6  sudo service ssh 
+    7  sudo service ssh start
+    8  sudo ufw allow 22
+    9  sudo ufw allow enable
+   10  sudo ufw enable
+   11  ifconfig
+   12  poweroff
+   13  git
+   14  docker
+   15  poweroff
+   16  docker
+   17  ifconfig 
+   18  df-h
+   19  dh -f
+   20  df -h
+   21  ifconfig 
+   22  clear
+   23  docker network create jenkins
+   24  sudo docker network create jenkins
+   25  sudo docker run \ 
+   26  sudo docker run   --name jenkins-docker   --detach   --privileged   --network jenkins   --network-alias docker   --env DOCKER_TLS_CERTDIR=/certs   --volume jenkins-docker-certs:/certs/client   --volume jenkins-data:/var/jenkins_home   --publish 2376:2376   --publish 3000:3000   --restart always   docker:dind   --storage-driver overlay2
+   27  nano Dockerfile
+   28  docker build -t myjenkins-blueocean:2.361.1-1 .
+   29  sudo docker build -t myjenkins-blueocean:2.361.1-1 .
+   30  sudo docker run   --name jenkins-blueocean   --detach   --network jenkins   --env DOCKER_HOST=tcp://docker:2376   --env DOCKER_CERT_PATH=/certs/client   --env DOCKER_TLS_VERIFY=1   --publish 8080:8080   --publish 50000:50000   --volume jenkins-data:/var/jenkins_home   --volume jenkins-docker-certs:/certs/client:ro   --volume "$HOME":/home   --restart=on-failure   --env JAVA_OPTS="-Dhudson.plugins.git.GitSCM.ALLOW_LOCAL_CHECKOUT=true"   myjenkins-blueocean:2.361.1-1
+   31  sudo docker logs jenkins-blueocean
+   32  docker logs jenkins-blueocean
+   33  sudo docker logs jenkins-blueocean
+   34  clear
+   35  poweroff
+   36  sudo poweroff
+   37  ifconfig 
+   38  clear
+   39  cd Downloads/
+   40  ls
+   41  git clone git@github.com:bancarafarros/simple-python-pyinstaller-app.git
+   42  cd simple-python-pyinstaller-app/
+   43  ls
+   44  pwd
+   45  nano Jenkinsfile
+   46  git add .
+   47  git commit -m "add declarative"
+   48  ls
+   49  nano Jenkinsfile
+   50  git add .
+   51  git commit -m "add declarative test stage"
+   52  git remote -v
+   53  git push -u origin master
+   54  nano Jenkinsfile
+   55  git add .
+   56  git commit -m "start scripted"
+   57  git push -u origin master
+   58  nano Jenkinsfile
+   59  git add .
+   60  git commit -m "start scripted"
+   61  nano Jenkinsfile
+   62  git add .
+   63  git commit -m "blank"
+   64  nano Jenkinsfile
+   65  git add .
+   66  git commit -m "declarative test"
+   67  ifconfig 
+   68  exit
+   69  nginx
+   70  sudo apt update
+   71  sudo apt install nginx
+   72  cd ..
+   73  pwd
+   74  ls
+   75  cd etc
+   76  ls
+   77  cd nginx/
+   78  ls
+   79  cd sites-available/
+   80  ls
+   81  pwd
+   82  ls
+   83  ls -l
+   84  ll
+   85  sudo apt update
+   86  sudo apt list --upgradable 
+   87  df -h
+   88  sudo apt update
+   89  docker ps
+   90  sudo docker ps
+   91  sudo docker ps -a
+   92  sudo apt list --upgradable 
+   93  df -h
+   94  sudo docker ps
+   95  exit
+   96  sudo -v
+   97  cd /
+   98  pwd
+   99  cd etc/nginx/sites-available/
+  100  sudo gedit default 
+  101  gedit default 
+  102  sudo apt update
+  103  sudo apt install gedit
+  104  gedit default 
+  105  sudo code
+  106  sudo nano default
+  107  ifconfig
+  108  sudo code
+  109  cd /
+  110  gedit etc/nginx/sites-available/
+  111  gedit etc/nginx/sites-available/default 
+  112  sudo gedit etc/nginx/sites-available/default 
+  113  clear
+  114  sudo nano /etc/nginx/sites-available/default
+  115  sudo nginx -t
+  116  sudo systemctl reload nginx
+  117  sudo iptables -A INPUT -p tcp --dport 9000 -j ACCEPT
+  118  docker ps
+  119  sudo docker ps
+  120  clear
+  121  sudo poweroff 
+  122  ifconfig
+  123  poweroff 
+  124  cd home/charr/Downloads/simple-python-pyinstaller-app/
+  125  git status
+  126  ifconfig
+  127  clear
+  128  docker ps
+  129  sudo docker ps
+  130  sudo stop docker
+  131  docker stop jenkins-blueocean jenkins-docker
+  132  sudo docker stop jenkins-blueocean jenkins-docker
+  133  docker ps
+  134  sudo docker ps
+  135  sudo docker run   --name jenkins-blueocean   --detach   --network jenkins   --env DOCKER_HOST=tcp://docker:2376   --env DOCKER_CERT_PATH=/certs/client   --env DOCKER_TLS_VERIFY=1   --publish 49000:8080 \  # Ubah port di sini
+  136  sudo docker run   --name jenkins-blueocean   --detach   --network jenkins   --env DOCKER_HOST=tcp://docker:2376   --env DOCKER_CERT_PATH=/certs/client   --env DOCKER_TLS_VERIFY=1   --publish 49000:8080 \  # Ubah port di sini
+  137  sudo docker run   --name jenkins-blueocean   --detach   --network jenkins   --env DOCKER_HOST=tcp://docker:2376   --env DOCKER_CERT_PATH=/certs/client   --env DOCKER_TLS_VERIFY=1   --publish 49000:8080 \  # Ubah port di sini
+  138  clear
+  139  sudo docker run   --name jenkins-blueocean   --detach   --network jenkins   --env DOCKER_HOST=tcp://docker:2376   --env DOCKER_CERT_PATH=/certs/client   --env DOCKER_TLS_VERIFY=1   --publish 49000:8080 \  # Ubah port di sini
+  140  clear
+  141  sudo docker run   --name jenkins-blueocean   --detach   --network jenkins   --env DOCKER_HOST=tcp://docker:2376   --env DOCKER_CERT_PATH=/certs/client   --env DOCKER_TLS_VERIFY=1   --publish 8080:8080   --publish 50000:50000   --volume jenkins-data:/var/jenkins_home   --volume jenkins-docker-certs:/certs/client:ro   --volume "$HOME":/home   --restart=on-failure   --env JAVA_OPTS="-Dhudson.plugins.git.GitSCM.ALLOW_LOCAL_CHECKOUT=true" \
+  142  clear
+  143  sudo docker run   --name jenkins-blueocean   --detach   --network jenkins   --env DOCKER_HOST=tcp://docker:2376   --env DOCKER_CERT_PATH=/certs/client   --env DOCKER_TLS_VERIFY=1   --publish 49000:8080   --publish 50000:50000   --volume jenkins-data:/var/jenkins_home   --volume jenkins-docker-certs:/certs/client:ro   --volume "$HOME":/home   --restart=on-failure   --env JAVA_OPTS="-Dhudson.plugins.git.GitSCM.ALLOW_LOCAL_CHECKOUT=true"   myjenkins-blueocean:2.361.1-1
+  144  sudo docker rm jenkins-blueocean
+  145  sudo docker run   --name jenkins-blueocean   --detach   --network jenkins   --env DOCKER_HOST=tcp://docker:2376   --env DOCKER_CERT_PATH=/certs/client   --env DOCKER_TLS_VERIFY=1   --publish 49000:8080   --publish 50000:50000   --volume jenkins-data:/var/jenkins_home   --volume jenkins-docker-certs:/certs/client:ro   --volume "$HOME":/home   --restart=on-failure   --env JAVA_OPTS="-Dhudson.plugins.git.GitSCM.ALLOW_LOCAL_CHECKOUT=true"   myjenkins-blueocean:2.361.1-1
+  146  sudo docker start jenkins-blueocean jenkins-docker
+  147  docker ps
+  148  sudo docker ps
+  149  exit
+  150  clear
+  151  sudo docker ps
+  152  exit
+  153  ifconfig 
+  154  exit
+  155  cls
+  156  clear
+  157  sudo docker run -d --name prometheus -p 9090:9090 prom/prometheus
+  158  sudo docker run -d --name grafana -p 3030:3030 -e "GF_SERVER_HTTP_PORT=3030" grafana/grafana
+  159  sudo docker exec -it prometheus sh
+  160  docker restart prometheus
+  161  sudo docker restart prometheus
+  162  sudo docker ps
+  163  sudo service docker status
+  164  sudo service docker start
+  165  sudo service docker status
+  166  sudo iptables -L
+  167  sudo iptables -L INPUT -n -v | grep 8080
+  168  clear
+  169  sudo docker exec -it prometheus sh
+  170  sudo docker restart prometheus
+  171  ping 192.168.43.1:53
+  172  ping 192.168.43.1
+  173  sudo docker exec -it prometheus sh
+  174  sudo docker restart prometheus
+  175  ping 192.168.43
+  176  ping 192.168.43.1
+  177  ifconfig 
+  178  clear
+  179  sudo docker exec -it prometheus sh
+  180  sudo docker exec -it prometheus bash
+  181  clear
+  182  sudo docker exec -it prometheus sh
+  183  telent 192.168.43.1:53
+  184  telnet 192.168.43.1:53
+  185  telnet
+  186  telnet 192.168.43.1
+  187  exit
+  188  ifconfig 
+  189  clear
+  190  telnet 192.168.43.1
+  191  telnet 192.168.43.1:53
+  192  sudo docker exec -it prometheus sh
+  193  sudo docker restart prometheus
+  194  sud docker network ls
+  195  sudo docker network ls
+  196  clear
+  197  telnet 192.168.43.1:8080
+  198  telnet 192.168.43.1:9090
+  199  sudo docker restart prometheus
+  200  sudo docker network connect jenkins prometheus
+  201  sudo docker network ls
+  202  sudo docker exec -it prometheus sh
+  203  sudo docker network ls
+  204  clear
+  205  ifconfig 
+  206  clear
+  207  sudo docker exec -u 0 -it prometheus
+  208  sudo docker exec -u 0 -it prometheus sh
+  209  clear
+  210  sudo poweroff 
+  211  clear
+  212  sudo docker ps
+  213  sudo docker ps -a
+  214  docker start prometheus grafana
+  215  sudo docker start prometheus grafana
+  216  sudo docker ps
+  217  clear
+  218  ifconfig 
+  219  clear
+  220  exit
+  221  ls
+  222  cd home/charr/Documents/a428-cicd-labs/
+  223  git status
+  224  git pull
+  225  git add .
+  226  git commit -m "add deploy stage"
+  227  git push -u origin react-app
+  228  clear
+  229  sudo docker exec -it prometheus sh
+  230  sudo poweroff 
+  231  ifconfig 
+  232  clear
+  233  sudo docker ps
+  234  sudo docker start prometheus grafana
+  235  sudo docker ps
+  236  clear
+  237  sudo docker exec -it prometheus sh
+  238  sudo docker restart prometheus
+  239  sudo poweroff 
+  240  ifco
+  241  ifconfig 
+  242  sudo docker ps
+  243  sudo docker start grafana prometheus
+  244  sudo docker ps
+  245  sudo docker restart grafana prometheus jenkins-blueocean jenkins-docker
+  246  sudo docker exec -it prometheus sh
+  247  poweroff 
+  248  pwd
+  249  infocinfig
+  250  ifconfig
+  251  sudo docker start prometheus garafana
+  252  sudo docker start prometheus grafana
+  253  ifconfig 
+  254  poweroff 
+  255  ifconfig
+  256  ifcondig
+  257  ifconfig
+  258  ifocnfig
+  259  ifconfig
+  260  sudo restart
+  261  sudo reboot
+  262  ifconfig
+  263  ./script-didlewiz.sh 
+  264  ./script-didlewiz.sh
+  265  ls
+  266  ll
+  267  pwd
+  268  free
+  269  fee --mega
+  270  free --mega
+  271  free --giga
+  272  man free
+  273  free --tera
+  274  free --kilo
+  275  free --mega
+  276  clear
+  277  free --giga
+  278  df
+  279  df -h
+  280  man df
+  281  df
+  282  man df
+  283  df -k
+  284  df -l
+  285  df -H
+  286  df -h
+  287  df -H
+  288  df -h
+  289  clear
+  290  grep
+  291  grep --help
+  292  df --output='sorce','pcent'
+  293  df -h --output='sorce','pcent'
+  294  df --output='source','pcent'
+  295  grep
+  296  grep --help
+  297  man grep
+  298  df -h --output='source','pcent'
+  299  df --output='source','pcent'
+  300  df -x tmpfs
+  301  df -h --output='source','pcent' -x tmpfs
+  302  sleep 3s
+  303  sleep 1m
+  304  ./script-didlewiz.sh 
+  305  nano history-didlewiz.txt
+  306  ls
+  307  nano history-didlewiz.txt
+  308  ls
+  309  history
+  310  history > history-didlewiz.txt
+  311  nano history-didlewiz.txt
+  312  rm history-didlewiz.txt 
+  313  sudo poweroff 
+  314  ifconfig 
+  315  ./script-didlewiz.sh 
+  316  history
+  317  history > history-didlewiz.txt
