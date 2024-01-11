@@ -15,7 +15,7 @@ do
 
   echo "Menampilkan penggunaan ruang disk pada filesystem dalam satuan gigabytes"
   # df untuk menampilkan informasi penggunaan ruang disk pada filesystem dan -h untuk menampilkan dalam satuan gigabytes
-  df -h
+  df -BG
   # Membuat baris baru dengan perintah echo ""
   echo ""
   # Menunggu 3 detik sebelum melanjutkan ke langkah berikutnya

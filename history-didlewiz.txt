@@ -315,3 +315,24 @@
   315  ./script-didlewiz.sh 
   316  history
   317  history > history-didlewiz.txt
+  318  zip script-didlewiz.sh history-didlewiz.txt 
+  319  zip submission1-linux-didlewiz.zip script-didlewiz.sh history-didlewiz.txt 
+  320  ls
+  321  git
+  322  ls
+  323  cd wwww/
+  324  ls
+  325  pwd
+  326  git init
+  327  git add .
+  328  git commit -m "finish submission"
+  329  git remote add github git@github.com:bancarafarros/Menjadi-Linux-System-Administrator-Proyek-Shell-Scripting.git
+  330  git push -u github master
+  331  sudo poweroff 
+  332  cd wwww/
+  333  ls
+  334  history
+  335  cls
+  336  clear
+  337  history 
+  338  history > history-didlewiz.txt
